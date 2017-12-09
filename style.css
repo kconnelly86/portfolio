@@ -41,6 +41,17 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+#portfolio-bg{
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92);
+}
+#about-bg{
+
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #232526, #414345);
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -111,6 +122,10 @@ body {
 }
 #imgKyle {
   border-radius: 150px;
+}
+#imgKyleAbout{
+  border-radius: 150px;
+   float: left;
 }
 /*nav bottom*/
 .social {
