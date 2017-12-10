@@ -70,7 +70,11 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.paragraph .clearfix{
 
+  max-width: 550px;
+  margin: 0 auto; 
+}
 /* Padding for spacing */
 .inner {
   padding: 2rem;
@@ -111,22 +115,6 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-#imgKyle {
-  border-radius: 150px;
-}
-#imgKyleAbout{
-  border-radius: 150px;
-   float: left;
-}
 /*nav bottom*/
 .social {
     text-align: center;
@@ -153,6 +141,27 @@ body {
        .social a.email    { background-image: url(images/email.png); }
        .social a.github   { background-image: url(images/github.png); }
 
+#imgKyle {
+  border-radius: 150px;
+}
+#imgKyleAbout{
+  border-radius: 150px;
+  float: left;
+
+}
+
+
+@media (min-width: 1019px) {
+  /*KC*/
+  .masthead-brand {
+    float: left;
+  }
+  /*index,about,portfolio*/
+  .nav-masthead {
+    float: right;
+  }
+}
+
 /*
  * Cover
  */
@@ -160,10 +169,7 @@ body {
 .cover {
   padding: 0 1.5rem;
 }
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: bold;
-}
+
 
 
 /*
@@ -179,7 +185,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 40em) {
+@media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -196,15 +202,17 @@ body {
   /* Handle the widths */
   .masthead,
   .mastfoot,
-  .cover-container {
+  .cover-container,
+  .paragraph {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 1178px) {
   .masthead,
   .mastfoot,
-  .cover-container {
+  .cover-container,
+  .paragraph {
     width: 42rem;
   }
 } 
